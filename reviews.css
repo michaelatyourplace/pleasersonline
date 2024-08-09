@@ -8,6 +8,11 @@ a {
     color: white;
 }
 
+#aboutNav {
+    display: flex;
+    flex-direction: row;
+}
+
 .navs {
     font-size: 20px;
 }
