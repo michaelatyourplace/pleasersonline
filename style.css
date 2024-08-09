@@ -1,0 +1,35 @@
+#aboutBody {
+    background-color: red;
+    color: white;
+}
+#aboutText {
+    background-color: red;
+    color: white;
+}
+
+p {
+    font-weight: 800;
+    font-size: x-large;
+}
+
+#aboutNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.navs {
+    color: white;
+}
+
+li a{
+    color: white;
+    font-size: 20px;
+}
+
+#serviceBody {
+    background-color: red;
+    color: white;
+}
+
