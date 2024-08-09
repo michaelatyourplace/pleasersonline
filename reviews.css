@@ -1,11 +1,14 @@
 
 html {
-    background-color: blue;
     color: white;
 }
 
 a {
     color: white;
+}
+
+.container {
+    background-color: blue;
 }
 
 #aboutNav {
@@ -30,7 +33,7 @@ a col. {
 
 
 .col {
-    background-color: white;
+    background-color: lightblue;
 
 }
 
