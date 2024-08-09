@@ -1,6 +1,6 @@
 
 html {
-    
+    background-color: blue;
     color: white;
 }
 
@@ -11,6 +11,7 @@ a {
 #aboutNav {
     display: flex;
     flex-direction: row;
+    margin-right 3%;
 }
 
 .navs {
