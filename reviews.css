@@ -9,6 +9,11 @@ html {
     font-size: 20px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+
 
 .col {
     background-color: white;
