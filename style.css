@@ -17,7 +17,6 @@ p {
 #aboutNav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     border-bottom: 5px solid white;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -30,6 +29,7 @@ p a{
 .navs {
     color: white;
     list-style-type: none;
+    margin-right: 3%;
 }
 
 .navs a {
