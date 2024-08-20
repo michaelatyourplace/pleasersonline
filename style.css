@@ -56,3 +56,17 @@ footer {
     font-size: larger;
     font-weight: 700;
 }
+
+
+
+
+.box {
+    
+    border: 1px solid black;
+    font-size: 2rem;
+    min-height: 50px;
+}
+
+#stones{
+    height: 400px;
+}
