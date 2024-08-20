@@ -42,6 +42,10 @@ li a{
     font-size: 20px;
 }
 
+a:hover {
+    color: coral;
+}
+
 #serviceBody {
     background-color: blue;
     color: white;
