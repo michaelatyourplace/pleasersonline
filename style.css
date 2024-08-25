@@ -79,3 +79,9 @@ footer {
 #stones{
     height: 400px;
 }
+
+@media (max-width: 320px) {
+    .element {
+        width: 100%;
+    }
+}
