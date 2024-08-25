@@ -80,7 +80,7 @@ footer {
     height: 400px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 100%) {
     .element {
         width: 100%;
     }
