@@ -79,5 +79,11 @@ footer {
 
 #stones{
     height: 400px;
+    margin-bottom: 30px;
+}
+
+#nap {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
