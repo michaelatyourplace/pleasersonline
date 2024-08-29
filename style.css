@@ -87,3 +87,8 @@ footer {
     margin-bottom: 30px;
 }
 
+.eventPages a{
+    color: blue;
+}
+
+.eventPages a:visited { color: black}
