@@ -1,148 +1,1385 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" defer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="style.css">
-        <title>Bachelorettes and PleasersOnline</title>
-    </head>
-    <body id="serviceBody">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <nav class="navbar navbar-expand-md bg-dark">
+  <title>Toronto Bachelorette Party Entertainment & Ideas | Pleasers Online</title>
 
-      <div class="container">
-        <a
-        href="#"
-        class="navbar-brand mb-0 h1">Pleasers!</a>
+  <meta name="description" content="Discover Toronto bachelorette party ideas, private male entertainers, dancers, nightlife and group activities throughout Toronto, Mississauga, Brampton and the GTA.">
 
-        
-        <button 
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        class="navbar-toggler"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon bg-primary"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            
-            <ul class="navbar-nav">
+  <link rel="canonical" href="https://pleasersonline.com/bachelorettes.html">
 
-                <li class="nav-item active">
-                    <a href="/index.html" class="nav-link active">
-                        Home
-                    </a>
-                </li>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                <li class="nav-item active">
-                    <a href="/about.html" class="nav-link ">
-                        About
-                    </a>
-                </li>
-            
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">
-                        Bachelorette
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a href="/reviews.html" class="nav-link">
-                        Reviews
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a href="/contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-               
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
 
-            </ul>
-        </div>
-        </div>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 260px;
+      background-color: #2196f3;
+      color: white;
+      padding: 35px 20px;
+      overflow-y: auto;
+      z-index: 1030;
+    }
+
+    .sidebar-brand {
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      margin-top: 35px;
+      margin-bottom: 55px;
+    }
+
+    .sidebar-brand:hover {
+      color: white;
+    }
+
+    .sidebar .nav-link {
+      color: white;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 12px 15px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+      background-color: white;
+      color: #1565c0;
+    }
+
+    .sidebar-description {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: 40px;
+      padding: 12px;
+    }
+
+    .main-content {
+      margin-left: 260px;
+      padding: 50px 40px;
+      max-width: 1350px;
+    }
+
+    .section {
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    .blue-heading {
+      color: #1565c0;
+      font-weight: 700;
+    }
+
+    .section-line {
+      width: 55px;
+      height: 7px;
+      border: none;
+      background-color: #2196f3;
+      opacity: 1;
+      border-radius: 5px;
+      margin: 20px 0 25px;
+    }
+
+    .small-image {
+      width: 100%;
+      max-width: 280px;
+      max-height: 220px;
+      object-fit: contain;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .small-image:hover {
+      opacity: 0.8;
+    }
+
+    .information-card {
+      background-color: #f1f1f1;
+      padding: 25px;
+      border-radius: 5px;
+      height: 100%;
+    }
+
+    .information-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .highlight {
+      background-color: #f5f9ff;
+      border-left: 4px solid #2196f3;
+      padding: 22px;
+      margin: 25px 0;
+    }
+
+    .btn-blue {
+      background-color: #1565c0;
+      color: white;
+      border: 1px solid #1565c0;
+      padding: 10px 22px;
+    }
+
+    .btn-blue:hover {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    a {
+      color: #1565c0;
+    }
+
+    .mobile-header {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    .offcanvas {
+      background-color: #2196f3;
+      color: white;
+      max-width: 270px;
+    }
+
+    .offcanvas .nav-link {
+      color: white;
+      padding: 12px;
+      font-weight: 600;
+    }
+
+    .offcanvas .nav-link:hover,
+    .offcanvas .nav-link.active {
+      background-color: white;
+      color: #1565c0;
+    }
+
+    footer {
+      background-color: #111111;
+      color: white;
+      padding: 30px 20px;
+      margin-left: 260px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #90caf9;
+    }
+
+    @media (max-width: 991.98px) {
+      .main-content {
+        margin-left: 0;
+        padding: 95px 20px 30px;
+      }
+
+      footer {
+        margin-left: 0;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .small-image {
+        max-width: 240px;
+        max-height: 200px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .small-image {
+        max-width: 220px;
+        max-height: 180px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!-- DESKTOP SIDEBAR -->
+
+<nav class="sidebar d-none d-lg-block">
+
+  <a href="index.html" class="sidebar-brand">
+    Pleasers<br>Online
+  </a>
+
+  <div class="nav flex-column">
+
+    <a href="index.html" class="nav-link">
+      Home
+    </a>
+
+    <a href="about.html" class="nav-link">
+      About
+    </a>
+
+    <a href="index.html#services" class="nav-link">
+      Entertainment Services
+    </a>
+
+    <a href="bachelorettes.html"
+      class="nav-link active"
+      aria-current="page">
+      Bachelorette Parties
+    </a>
+
+    <a href="index.html#locations" class="nav-link">
+      Locations
+    </a>
+
+    <a href="contact.html" class="nav-link">
+      Contact
+    </a>
+
+  </div>
+
+  <div class="sidebar-description">
+
+    <p>
+      Bachelorette party entertainment, private dancers
+      and celebration ideas throughout Toronto and
+      Southern Ontario.
+    </p>
+
+  </div>
+
+</nav>
+
+<!-- MOBILE NAVIGATION -->
+
+<header class="mobile-header fixed-top d-lg-none p-3">
+
+  <div class="d-flex align-items-center">
+
+    <button class="btn btn-outline-light me-3"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu"
+      aria-label="Open menu">
+
+      &#9776;
+
+    </button>
+
+    <span class="fw-bold fs-5">
+      Pleasers Online
+    </span>
+
+  </div>
+
+</header>
+
+<div class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="mobileMenu"
+  aria-labelledby="mobileMenuLabel">
+
+  <div class="offcanvas-header">
+
+    <h2 class="h5" id="mobileMenuLabel">
+      Pleasers Online
+    </h2>
+
+    <button type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close menu">
+    </button>
+
+  </div>
+
+  <div class="offcanvas-body">
+
+    <nav class="nav flex-column">
+
+      <a href="index.html" class="nav-link">
+        Home
+      </a>
+
+      <a href="about.html" class="nav-link">
+        About
+      </a>
+
+      <a href="index.html#services" class="nav-link">
+        Entertainment Services
+      </a>
+
+      <a href="bachelorettes.html"
+        class="nav-link active"
+        aria-current="page">
+        Bachelorette Parties
+      </a>
+
+      <a href="index.html#locations" class="nav-link">
+        Locations
+      </a>
+
+      <a href="contact.html" class="nav-link">
+        Contact
+      </a>
+
     </nav>
 
+  </div>
 
-<div class="container-fluid">
-    <div class="card border-primary">
-        <img class="card-img-top" src="Ontario, Canada.jpg" alt="Ontario, Canada SC">
-        <div class="card-body bg-primary ">
-            <h4 class="card-title">Strip Club</h4>
-            <p class="card-text border-primary">
-                Planning some extra sparkle for your strip club for bachelorette? Consider 
-                adding an entertainer to elevate the fun or going to PleasersOnline! Think beyond the typical and 
-                explore options that match the groups personality. You could hire a talented
-                 local stripper for a private serenade during a cruise or at your 
-                 charming rental. A fun and interactive Ontario, Canada-themed strip club host could 
-                 get everyone laughing during a show. For a touch of 
-                 Southern flair, perhaps a sexy dancer sharing captivating dances. 
-                 Remember to prioritize reputable and professional entertainers to ensure 
-                 a memorable and enjoyable experience for everyone.
-            </p>
-        </div>
-    </div>
 </div>
 
-<div class="container-fluid"><h2 class="text-center">Ontario, Canada Bachelorette Idea</h2></div>
+<!-- MAIN CONTENT -->
 
-<div class="container">
-    <img class="card-img-top" src="gen9.jpg" style="height: 25rem; width: 83%;">
-</div>
+<main class="main-content">
 
-<div class="container">
-    <div class="row row-cols-1">
-        
-        <div class="col mb-3 ">
-            <p>
-            We have your top choice for creating the 
-            ultimate bachelorette parties nights like. If your booking entertainers
-            private showing from chefs to musicians to dance filled 
-            with fun, and lots of interactive play, get ready. As a 
-            event planner myself and a believer in the fun of 
-            celebrations. 
+  <!-- PAGE HEADER -->
+
+  <header>
+
+    <h1 class="blue-heading">
+      Toronto Bachelorette Party Entertainment
+    </h1>
+
+    <h2 class="h5 blue-heading mt-3">
+      Private Entertainers, Girls Nights and Bridal Celebrations
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-center g-4">
+
+      <div class="col-md-8">
+
+        <p>
+          Planning a bachelorette party in Toronto, Ontario?
+          Pleasers Online helps bridal parties explore
+          private entertainment, exciting group activities,
+          nightlife and creative ways to celebrate the
+          bride-to-be.
         </p>
-        <div class="col mb-3  ">
-            <p>
-            Organizing exciting 
-            bachelorette parties tailored to your guest make the 
-            party way better. Whether you need a wild nite or a 
-            relaxed show, get ready for a action-filled interactive 
-            experience. 
+
+        <p>
+          Whether you are organizing a weekend in downtown
+          Toronto, a private celebration in Mississauga or
+          a girls night out in Vaughan, there are plenty
+          of entertainment options throughout the Greater
+          Toronto Area.
         </p>
 
-    <div class="col mb-5">
-        <img src="male stripper.png" style="width: 100%; height: 25%;">
-    </div>
+        <a href="contact.html" class="btn btn-blue">
+          Entertainment Inquiries
+        </a>
 
-    <div class="container">
-      <div class="row">
-        <div class="col mb-5 ">
-            <p>
-                PleasersOnline is the best in entertainment for bachelorettes       
-            </p>
-        </div>
       </div>
-    </div>     
 
-        <div class="container">
-            <img src="gen12.jpg" style="width: 100%; height: 100%;">
+      <div class="col-md-4 text-center">
+
+        <img src="Strip club.png"
+          class="small-image"
+          alt="Bachelorette nightlife inspiration"
+          onclick="openImage(this)">
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- BACHELORETTE IDEAS -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Bachelorette Party Ideas
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-start g-4">
+
+      <div class="col-md-4 text-center">
+
+        <img src="gen9.jpg"
+          class="small-image"
+          alt="Bachelorette party inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+      <div class="col-md-8">
+
+        <p>
+          Toronto offers an exciting combination of
+          restaurants, rooftop bars, shopping, waterfront
+          activities, private entertainment and nightlife.
+          Bridal parties can create an entire weekend
+          around the interests of the bride and her friends.
+        </p>
+
+        <p>
+          Start the celebration with a group brunch,
+          arrange a creative activity during the afternoon
+          and finish the evening with dinner, dancing
+          or private party entertainment.
+        </p>
+
+        <p>
+          Popular areas for bachelorette parties include
+          King Street West, Queen Street West, Yorkville,
+          Ossington Avenue and Toronto's Entertainment
+          District.
+        </p>
+
+      </div>
+
+    </div>
+
+    <h3 class="h4 mt-4">
+      Fun Activities for the Bride Squad
+    </h3>
+
+    <ul>
+
+      <li>Private male entertainment</li>
+
+      <li>Rooftop brunch and cocktails</li>
+
+      <li>Private dance and pole fitness classes</li>
+
+      <li>Toronto waterfront and boat cruises</li>
+
+      <li>Luxury spa and beauty treatments</li>
+
+      <li>Private karaoke experiences</li>
+
+      <li>Creative painting and pottery workshops</li>
+
+      <li>Private chef dinners</li>
+
+      <li>Comedy shows and live performances</li>
+
+      <li>Nightclubs and cocktail lounges</li>
+
+      <li>Themed parties and group photography</li>
+
+    </ul>
+
+  </section>
+
+  <!-- PRIVATE MALE ENTERTAINMENT -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Hire a Male Entertainer for a Toronto Bachelorette Party
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-start g-4">
+
+      <div class="col-md-8">
+
+        <p>
+          Hiring a private male entertainer is one way to
+          add a surprise to your Toronto bachelorette party.
+          Rather than organizing your entire celebration
+          around a public strip club or male revue, private
+          entertainment allows the group to enjoy a
+          performance at a suitable private location.
+        </p>
+
+        <p>
+          Private dancers may be available for daytime
+          brunch celebrations, evening parties, birthdays,
+          girls weekends and other adult events throughout
+          Toronto and surrounding communities.
+        </p>
+
+        <p>
+          Performance styles, pricing, costumes and
+          availability depend on the individual entertainer.
+          Always discuss your expectations and event
+          details before confirming a booking.
+        </p>
+
+      </div>
+
+      <div class="col-md-4 text-center">
+
+        <img src="male stripper.png"
+          class="small-image"
+          alt="Male dancer entertainment inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+    </div>
+
+    <div class="highlight">
+
+      <h3 class="h4">
+        Featured Ontario Male Entertainer
+      </h3>
+
+      <p>
+        <a href="https://hardbodydancer.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Hard Body Dancer
+        </a>
+        is an independent male entertainment business
+        operated by Miguel in Ontario, Canada.
+      </p>
+
+      <p>
+        Miguel offers private male entertainment for
+        bachelorette parties, birthdays, girls nights out
+        and special celebrations throughout Toronto
+        and Southern Ontario.
+      </p>
+
+      <p>
+        Visit his website directly for photographs,
+        performance information, pricing, service
+        areas and booking availability.
+      </p>
+
+      <a href="https://hardbodydancer.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-blue">
+
+        Visit Hard Body Dancer
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- PRIVATE VS PUBLIC -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Private Entertainment or a Toronto Strip Club?
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Bridal parties searching for Toronto male strippers
+      often consider either attending a public entertainment
+      venue or arranging a private performance.
+      Both options offer different experiences depending
+      on the preferences of the group.
+    </p>
+
+    <p>
+      A public show may be suitable for groups looking
+      for a traditional nightlife experience. Hiring a
+      private dancer offers greater flexibility when
+      coordinating the timing, location and atmosphere
+      of your celebration.
+    </p>
+
+    <div class="row g-3 mt-3">
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>Flexible Scheduling</h3>
+
+          <p>
+            Arrange entertainment during brunch,
+            in the afternoon or before heading
+            out for dinner and nightlife.
+          </p>
 
         </div>
 
-     
-    <footer> Made By PleasersOnline</footer>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>Private Celebrations</h3>
+
+          <p>
+            Enjoy entertainment with your invited
+            guests in an approved private setting
+            without the crowds of a public venue.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>Group Expenses</h3>
+
+          <p>
+            Sharing the cost of entertainment among
+            members of the bridal party may help
+            keep the celebration affordable.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DAYTIME ENTERTAINMENT -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Bachelorette Brunch and Daytime Entertainment
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-start g-4">
+
+      <div class="col-md-8">
+
+        <p>
+          Not every bachelorette party needs to begin
+          after dark. Toronto offers plenty of daytime
+          entertainment opportunities for bridal parties
+          who want to make the most of their weekend.
+        </p>
+
+        <p>
+          Consider arranging a private brunch with
+          decorations, matching outfits, party games,
+          music and a surprise entertainer.
+        </p>
+
+        <p>
+          A daytime celebration also gives your group
+          more flexibility to enjoy dinner reservations,
+          rooftop lounges, shopping or nightclub
+          entertainment later in the evening.
+        </p>
+
+        <p>
+          Whether you are celebrating at home or at
+          an approved private event venue, confirm
+          that outside entertainment is permitted
+          before booking a performer.
+        </p>
+
+      </div>
+
+      <div class="col-md-4 text-center">
+
+        <img src="gen12.jpg"
+          class="small-image"
+          alt="Private bridal party celebration inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LOCATIONS -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Bachelorette Party Entertainment Across the GTA
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Toronto is not the only destination for a great
+      bachelorette celebration. Private entertainers
+      may travel throughout the Greater Toronto Area
+      and Southern Ontario, depending on individual
+      service areas and availability.
+    </p>
+
+    <div class="row g-3">
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Downtown Toronto</h3>
+
+          <p>
+            Rooftop lounges, stylish restaurants,
+            private entertainment, shopping and
+            exciting nightlife for bridal parties.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Mississauga</h3>
+
+          <p>
+            Private party celebrations, group dinners
+            and independent entertainment options
+            throughout Mississauga and Port Credit.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Brampton</h3>
+
+          <p>
+            Celebrate the bride with themed parties,
+            private dancers and entertainment
+            at suitable event locations.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Vaughan</h3>
+
+          <p>
+            Explore private event entertainment,
+            group activities, dining and creative
+            bachelorette party experiences.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Markham and Richmond Hill</h3>
+
+          <p>
+            Independent entertainment options for
+            private bridal celebrations, group
+            dinners and girls nights out.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Oakville and Burlington</h3>
+
+          <p>
+            Waterfront dining, spa experiences,
+            private parties and relaxing weekend
+            celebrations west of Toronto.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Hamilton</h3>
+
+          <p>
+            Combine waterfall adventures, local
+            restaurants, downtown nightlife and
+            private entertainment for the bride.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Niagara Falls</h3>
+
+          <p>
+            Explore winery weekends, casino
+            entertainment, spa experiences and
+            private bachelorette celebrations.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <h3 class="h5 mt-4">
+      Additional Areas
+    </h3>
+
+    <p>
+      Bachelorette entertainment inquiries may also
+      include Scarborough, North York, Etobicoke,
+      East York, Woodbridge, Thornhill, Aurora,
+      Newmarket, Pickering, Ajax, Whitby, Oshawa
+      and Milton.
+    </p>
+
+    <p>
+      Contact your chosen entertainer to confirm
+      travel fees, availability and performance
+      arrangements for your specific location.
+    </p>
+
+    <a href="index.html#locations">
+      Explore more Toronto entertainment locations
+    </a>
+
+  </section>
+
+  <!-- PARTY THEMES -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Bachelorette Party Themes and Entertainment Ideas
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Choosing a theme makes it easier to organize
+      decorations, matching outfits, party games
+      and entertainment for the bride.
+    </p>
+
+    <div class="row g-3">
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Last Disco</h3>
+
+          <p>
+            Metallic outfits, disco balls, dancing
+            and music for an energetic celebration
+            with the bridal party.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Pretty in Pink</h3>
+
+          <p>
+            Pink decorations, matching accessories,
+            themed cocktails and a glamorous
+            bachelorette brunch.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Last Rodeo</h3>
+
+          <p>
+            Cowboy boots, country music, themed
+            party games and coordinated entertainment
+            for the bride squad.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="information-card">
+
+          <h3>Vino Before Vows</h3>
+
+          <p>
+            Wine tastings, elegant dinners,
+            Niagara winery tours and relaxing
+            celebrations with friends.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WEEKEND ITINERARY -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Bachelorette Weekend Itinerary
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="highlight">
+
+      <h3 class="h5">
+        Friday – Arrival and Nightlife
+      </h3>
+
+      <ul class="mb-0">
+
+        <li>Check into your accommodations.</li>
+
+        <li>Decorate the bridal party's celebration space.</li>
+
+        <li>Enjoy dinner in downtown Toronto.</li>
+
+        <li>Explore cocktail lounges along King Street West.</li>
+
+      </ul>
+
+    </div>
+
+    <div class="highlight">
+
+      <h3 class="h5">
+        Saturday – Brunch and Entertainment
+      </h3>
+
+      <ul class="mb-0">
+
+        <li>Start with a celebratory bachelorette brunch.</li>
+
+        <li>Enjoy shopping, a spa visit or a waterfront activity.</li>
+
+        <li>Arrange private entertainment and party games.</li>
+
+        <li>Get dressed up for dinner and dancing.</li>
+
+      </ul>
+
+    </div>
+
+    <div class="highlight">
+
+      <h3 class="h5">
+        Sunday – Relax and Explore
+      </h3>
+
+      <ul class="mb-0">
+
+        <li>Enjoy breakfast with the bridal party.</li>
+
+        <li>Explore Kensington Market or the Distillery District.</li>
+
+        <li>Take final group photographs.</li>
+
+        <li>Prepare for the trip home.</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- BOOKING INFORMATION -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Booking Entertainment for Your Bachelorette Party
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Before contacting an entertainer, make sure your
+      group has agreed on the basic details of the
+      celebration. Providing accurate information
+      can make the booking process much easier.
+    </p>
+
+    <ul>
+
+      <li>
+        <strong>Party Date:</strong>
+        Confirm your preferred date and performance time.
+      </li>
+
+      <li>
+        <strong>Event Location:</strong>
+        Provide the city and type of venue.
+      </li>
+
+      <li>
+        <strong>Group Size:</strong>
+        Estimate the number of guests attending.
+      </li>
+
+      <li>
+        <strong>Entertainment Preferences:</strong>
+        Discuss the performance style that suits the group.
+      </li>
+
+      <li>
+        <strong>Budget:</strong>
+        Confirm the total price and any additional fees.
+      </li>
+
+      <li>
+        <strong>Venue Permission:</strong>
+        Make sure outside entertainment is permitted.
+      </li>
+
+      <li>
+        <strong>Photography:</strong>
+        Confirm whether photos and videos are allowed.
+      </li>
+
+    </ul>
+
+    <p>
+      Always respect the performer's agreed boundaries
+      and make sure everyone attending is comfortable
+      with the planned entertainment.
+    </p>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Bachelorette Party FAQs
+    </h2>
+
+    <hr class="section-line">
+
+    <h3 class="h5 mt-4">
+      Is Toronto a good city for a bachelorette party?
+    </h3>
+
+    <p>
+      Yes. Toronto offers nightlife, restaurants,
+      shopping, private entertainers, waterfront
+      activities and creative group experiences
+      for bridal parties.
+    </p>
+
+    <h3 class="h5 mt-4">
+      Can you hire a male stripper in Toronto?
+    </h3>
+
+    <p>
+      Independent male entertainers are available
+      for private celebrations in Toronto and
+      surrounding communities. Contact individual
+      performers for availability, pricing and
+      performance information.
+    </p>
+
+    <h3 class="h5 mt-4">
+      How much does bachelorette entertainment cost?
+    </h3>
+
+    <p>
+      Prices depend on the entertainer, event
+      location, travel requirements and performance
+      duration. Confirm the complete cost before
+      making a booking.
+    </p>
+
+    <h3 class="h5 mt-4">
+      What areas around Toronto offer bachelorette entertainment?
+    </h3>
+
+    <p>
+      Entertainment options can be explored throughout
+      Mississauga, Brampton, Vaughan, Markham,
+      Richmond Hill, Oakville, Burlington, Hamilton
+      and other Southern Ontario communities.
+    </p>
+
+    <h3 class="h5 mt-4">
+      Can you book entertainment during the day?
+    </h3>
+
+    <p>
+      Daytime performances may be available for
+      bachelorette brunches, afternoon celebrations
+      and private gatherings, depending on the
+      entertainer's schedule.
+    </p>
+
+    <h3 class="h5 mt-4">
+      What can you do for a Toronto bachelorette party
+      besides drinking?
+    </h3>
+
+    <p>
+      Bridal parties can enjoy spa treatments,
+      boat cruises, shopping, cooking classes,
+      private dance lessons, photography,
+      comedy shows and creative workshops.
+    </p>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Plan Your Toronto Bachelorette Party
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Pleasers Online provides entertainment information
+      and celebration ideas for bridal parties throughout
+      Toronto and Southern Ontario.
+    </p>
+
+    <p>
+      Whether you are planning a private party,
+      a weekend getaway or a girls night out,
+      explore our entertainment resources and
+      discover options for your next celebration.
+    </p>
+
+    <p>
+      Visit the
+      <a href="index.html">
+        Toronto party entertainers homepage
+      </a>
+      for additional information about independent
+      entertainers, private dancers and special
+      event entertainment.
+    </p>
+
+    <div class="d-flex flex-wrap gap-3">
+
+      <a href="contact.html" class="btn btn-blue">
+        Entertainment Inquiries
+      </a>
+
+      <a href="index.html" class="btn btn-outline-dark">
+        Return to Homepage
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- IMAGE MODAL -->
+
+<div class="modal fade" id="imageModal"
+  tabindex="-1"
+  aria-labelledby="imageCaption"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header border-0">
+
+        <h2 class="modal-title fs-6" id="imageCaption">
+          Entertainment Gallery
+        </h2>
+
+        <button type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close">
+        </button>
+
+      </div>
+
+      <div class="modal-body text-center">
+
+        <img id="modalImage"
+          class="img-fluid rounded"
+          alt=""
+          style="max-height:75vh;">
+
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
+<!-- FOOTER -->
 
+<footer>
 
+  <div class="container-fluid">
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+
+        <h2 class="h5">
+          Pleasers Online
+        </h2>
+
+        <p class="small">
+          Bachelorette party entertainment, independent
+          dancers and celebration ideas throughout
+          Toronto and Southern Ontario, Canada.
+        </p>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <h3 class="h6">
+          Website Links
+        </h3>
+
+        <p class="small">
+
+          <a href="index.html">Home</a> |
+
+          <a href="about.html">About</a> |
+
+          <a href="bachelorettes.html">Bachelorettes</a> |
+
+          <a href="contact.html">Contact</a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="small text-center">
+
+      Toronto | Mississauga | Brampton | Vaughan |
+      Markham | Richmond Hill | Oakville |
+      Burlington | Hamilton | Niagara Falls
+
+    </p>
+
+    <p class="small text-center">
+
+      Images are provided for entertainment inspiration.
+      Availability varies by individual performer.
+      Adult entertainment is restricted to individuals
+      meeting applicable legal age requirements.
+
+    </p>
+
+    <p class="text-center mb-0">
+
+      &copy; 2026 Pleasers Online. All Rights Reserved.
+
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function openImage(element) {
+
+    document.getElementById("modalImage").src = element.src;
+
+    document.getElementById("modalImage").alt = element.alt;
+
+    document.getElementById("imageCaption").textContent =
+      element.alt;
+
+    const imageModal = bootstrap.Modal.getOrCreateInstance(
+      document.getElementById("imageModal")
+    );
+
+    imageModal.show();
+
+  }
+</script>
 
 </body>
 </html>

@@ -1,270 +1,1492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pleasers Online | Pleasers Online Strippers</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Toronto Party Entertainers & Private Dancers | Pleasers Online</title>
+
+  <meta name="description" content="Discover private entertainers, male and female dancers, bachelorette party entertainment and adult party ideas in Toronto, Mississauga, Brampton, Vaughan and the Greater Toronto Area.">
+
+  <link rel="canonical" href="https://pleasersonline.com/">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 260px;
+      background-color: #2196f3;
+      color: white;
+      padding: 35px 20px;
+      overflow-y: auto;
+      z-index: 1030;
+    }
+
+    .sidebar-brand {
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      margin-top: 35px;
+      margin-bottom: 55px;
+    }
+
+    .sidebar .nav-link {
+      color: white;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 12px 15px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+      background-color: white;
+      color: #1565c0;
+    }
+
+    .sidebar-description {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-top: 40px;
+      padding: 12px;
+    }
+
+    .main-content {
+      margin-left: 260px;
+      padding: 50px 40px;
+      max-width: 1450px;
+    }
+
+    .section {
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    .blue-heading {
+      color: #1565c0;
+      font-weight: 700;
+    }
+
+    .section-line {
+      width: 55px;
+      height: 7px;
+      border: none;
+      background-color: #2196f3;
+      opacity: 1;
+      border-radius: 5px;
+      margin: 20px 0 25px;
+    }
+
+    .gallery-image {
+      width: 100%;
+      max-width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .gallery-image:hover {
+      opacity: 0.8;
+    }
+
+    .small-image {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .information-card {
+      background-color: #f1f1f1;
+      padding: 22px;
+      border-radius: 5px;
+      height: 100%;
+    }
+
+    .information-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .package-card {
+      background-color: #f1f1f1;
+      text-align: center;
+      height: 100%;
+      border: 1px solid #dddddd;
+    }
+
+    .package-heading {
+      background-color: #2196f3;
+      color: white;
+      padding: 25px 10px;
+    }
+
+    .package-heading-dark {
+      background-color: #111111;
+      color: white;
+      padding: 25px 10px;
+    }
+
+    .package-item {
+      padding: 14px;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .city-box {
+      background-color: #f5f9ff;
+      border-left: 4px solid #2196f3;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .btn-blue {
+      background-color: #1565c0;
+      color: white;
+      border: 1px solid #1565c0;
+      padding: 10px 22px;
+    }
+
+    .btn-blue:hover {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    a {
+      color: #1565c0;
+    }
+
+    .mobile-header {
+      background-color: #2196f3;
+      color: white;
+    }
+
+    .offcanvas {
+      background-color: #2196f3;
+      color: white;
+      max-width: 270px;
+    }
+
+    .offcanvas .nav-link {
+      color: white;
+      padding: 12px;
+      font-weight: 600;
+    }
+
+    .offcanvas .nav-link:hover {
+      background-color: white;
+      color: #1565c0;
+    }
+
+    footer {
+      background-color: #111111;
+      color: white;
+      padding: 30px 20px;
+      margin-left: 260px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #90caf9;
+    }
+
+    @media (max-width: 991.98px) {
+      .main-content {
+        margin-left: 0;
+        padding: 95px 20px 30px;
+      }
+
+      footer {
+        margin-left: 0;
+      }
+
+      .gallery-image {
+        max-width: 220px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .gallery-image {
+        height: 125px;
+      }
+
+      .section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+
 </head>
+
 <body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Menu</b></h3>
+<!-- DESKTOP SIDEBAR -->
+
+<nav class="sidebar d-none d-lg-block">
+
+  <a href="index.html" class="sidebar-brand">
+    Pleasers<br>Online
+  </a>
+
+  <div class="nav flex-column">
+
+    <a href="index.html"
+      class="nav-link active"
+      aria-current="page">
+      Home
+    </a>
+
+    <a href="about.html" class="nav-link">
+      About
+    </a>
+
+    <a href="bachelorettes.html" class="nav-link">
+      Bachelorette Parties
+    </a>
+
+    <a href="#locations" class="nav-link">
+      Locations
+    </a>
+
+    <a href="contact.html" class="nav-link">
+      Contact
+    </a>
+
   </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="/about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
-    <a href="/bachelorettes.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bachelorettes</a>
-    <a href="/reviews.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reviews</a> 
-    <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+
+  <div class="sidebar-description">
+
+    <p>
+      Private party entertainment, independent dancers
+      and special event ideas throughout Toronto and
+      Southern Ontario.
+    </p>
+
   </div>
+
 </nav>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Stripper Bachelorette Parties</span>
+<!-- MOBILE NAVIGATION -->
+
+<header class="mobile-header fixed-top d-lg-none p-3">
+
+  <div class="d-flex align-items-center">
+
+    <button class="btn btn-outline-light me-3"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu"
+      aria-controls="mobileMenu"
+      aria-label="Open menu">
+
+      &#9776;
+
+    </button>
+
+    <span class="fw-bold fs-5">
+      Pleasers Online
+    </span>
+
+  </div>
+
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="mobileMenu"
+  aria-labelledby="mobileMenuLabel">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="offcanvas-header">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-xlarge w3-text-blue"><b>Bachelorettes Activities</b></h1>
-    <h2 class="w3-large w3-text-blue"><b>Parties, Travel, Entertainers</b></h2>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="Strip club.png" style="width:100%" onclick="onClick(this)" alt="bachelorette">
-      <img src="gen9.jpg" style="width:100%" onclick="onClick(this)" alt="bach party">
-    </div>
+    <h2 class="h5" id="mobileMenuLabel">
+      Pleasers Online
+    </h2>
 
-    <div class="w3-half">
-      <img src="male stripper.png" style="width:100%" onclick="onClick(this)" alt="Downtown">
-      <img src="gen5.jpg" style="width:100%" onclick="onClick(this)" alt="bachelorette">
-      <img src="gen11.jpg" style="width: 100%" onclick="onClick(this)" alt="strip club">
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h3 class="w3-large w3-text-black"><b></b>Hire Male Strippers - Here To Please Your Party</h3>
-    <hr style="width:50px;border:5px solid black" class="w3-round">
-    <p>
-      The busy city of Toronto Ontario to the city of Atlanta, GA—famous for its coastal charm, historic towns, and vibrant nightlife—isn’t just a destination for southern hospitality and fresh seafood. It’s also a rising hotspot for unforgettable adult entertainment experiences, especially when it comes to hiring male strippers for special events. Whether you’re planning a wild bachelorette weekend in Toronto, a spicy girls’ night in Buffalo, or a surprise birthday celebration in Beaufort, hiring a professional entertainer can take your gathering from ordinary to unforgettable.
-    </p>
-        
-    <h4>Booking a Male Stripper</h4>
-    <p>While bachelorette parties top the list, male strippers in the Lowcountry are in high demand for a range of occasions:</p>
-    <ul>
-      <li><strong>Birthday Parties:</strong> Whether you're turning 25 or 55, a surprise performer makes it a night to remember.</li>
-      <li><strong>Girls’ Weekend Getaways:</strong> Kick off your girls’ trip with a little cheeky fun.</li>
-      <li><strong>Divorce Parties:</strong>Celebrate your new chapter with empowering entertainment.</li>
-      <li><strong>Retirement Celebrations:</strong> Yes, even the most seasoned among us enjoy a little spice.</li>
-      <li><strong>Couples' Parties:</strong>Add a little flair to an adult-themed celebration.</li>
-    </ul>
-    
-    <h4>Male Strippers</h4>
-    <ul>
-      <li><strong>Just Because:</strong>No matter the reason, the goal is the same: to create a memory that sticks.</li>
-      <li><strong>You Choose the Location:</strong>Whether you're staying in a vacation rental, a beach house, or a hotel downtown, most performers travel to you. This means you can plan your entertainment around your group’s schedule and preferences without worrying about transportation or venue restrictions.</li>
-      <li><strong>Performers Fit The Vibe:</strong>Many dancers offer themed costumes, from firefighters and military men to charming Southern gents. Want something cheeky? Sultry? Over-the-top funny? Just communicate your vision when booking.</li>
-      <li><strong>What to Expect When You Book:</strong>Booking a male stripper in the Lowcountry isn’t complicated, but knowing what to expect will ensure your party goes off without a hitch.</li>
-      <li>A example of a good professional male stripper is <a href="https://hardbodydancer.com">Hard body dancer</a> in the Ontario, Canada area - Miguel Exotic Dancer.</li>
-      <li>Another Example Michael After Dark a traveling male stripper.</li>
-    </ul>
-
-    <h4>You Can Set The Pace</h4>
-    <ul>
-      <li><strong>How Long:</strong>As long as is needed for the party.</li>
-      <li><strong>No Strip Club Needed:</strong>Because the private experiences than large strip clubs, booking directly means you get a more tailored, intimate, and memorable experience.</li>
-      <li><strong>Book Early, Escpecially On Weekends:</strong>Our major destinations for bachelorettes and beach groups. That means performers book up fast. Lock in your entertainment a few weeks in advance if possible.</li>
-      <li><strong>Communicate Clearly:</strong>Be upfront about the vibe you want. Do you want funny and playful or seriously seductive? The more info you provide, the better the experience.</li>
-      <li><strong>Respect Goes A Long Way:</strong>These entertainers are professionals. Treat them with respect, follow the agreed-upon rules, and you’ll get the best performance in return.</li>
-      <li><strong>Have The Payment Ready:</strong>Most dancers require a deposit upfront, with the remainder due at the time of performance. Make sure your group agrees on the split before the dancer arrives to avoid any awkward delays.</li>
-      <li><strong>Popular Spots For A Private Show:</strong>AirBnb, Rental House, Apartment, Dorm Room</li>
-      <li><strong>A Few More Things:</strong>Here are a few ideal settings for a male stripper performance in the Lowcountry:</li>
-      <li><strong>Folly Beach:</strong>Oceanfront homes and decks make for unforgettable outdoor (or indoor) shows.</li>
-    </ul>
-
-    <h4>Where The Fun Happens</h4>
-    <ul>
-      <li><strong>Toronto Canada AirBnb: </strong>A rental house to bring the fun to you.</li>
-      <li><strong>Downtown Columbus Ohio Rentals: </strong>A chic townhouse or apartment in the city can turn into your own private nightclub.</li>
-      <li><strong>Atlanta Ga Vacation Homes:</strong>Perfect for an upscale but cheeky girls’ weekend.</li>
-      <li><strong>Macon Ga: </strong>Big houses and quiet neighborhoods make it easy to have fun without outside noise complaints.</li>
-      <li><strong>Private Yachts or Boats:</strong> Yes, some groups even bring the show to the water!</li>
-    </ul>
-    <p>
-      A performer known for high-energy dance moves, creative costumes, and a stage presence that gets everyone smiling. Whether he’s showing up in a tux or a towel, he’s known to light up the room. He's a local favorite for birthday surprises and bachelorette blowouts.
-    </p>
-        
-    <p>
-      Booking talent ensures you get a polished, experienced performer who knows how to work the crowd and keep the energy just right for your crew.
-    </p>
-           
-    <h4>Things To Know</h4>
-    <ul>
-      <li><strong>Music: </strong>Have your playlist or speaker ready if the dancer isn’t bringing their own music.</li>
-      <li><strong>Cameras:</strong>Keep the camera phones off unless the dancer agrees to photos.</li>
-      <li><strong>Assignment: </strong>Assign someone to handle the door or direct the dancer quietly if it’s a surprise.</li>
-      <li><strong>Set Up:</strong>Set the room up with enough space to perform.</li>
-    </ul>
-    
-    <p>Hiring a male stripper in the Lowcountry isn’t just a cheeky activity—it’s an experience. Whether you’re sipping cocktails on the porch in Beaufort or living it up in a Atlanta penthouse, bringing in a professional dancer adds a thrilling twist that your guests won’t stop talking about.</p>
+    <button type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close menu">
+    </button>
 
   </div>
-  
-  <h3>When You Hire The Male Stripper Go Private</h3>
 
-  <img src="gen10.jpg" alt=""> 
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h2 class="w3-large w3-text-black"><b>The Entertainment</b></h2>
-    <h3 class="w3-large w3-text-black"><b>Why a Private Party Male Stripper Is Better Than a Male Revue Show</b></h3>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>When it comes to planning a girls’ night, bachelorette bash, or birthday surprise, many people debate between two options: going out to a male revue or hiring a private male stripper to come to them. While both can be fun, the private party experience wins hands down in terms of value, convenience, and personalization.</p>
-    <p>Let’s break down why going private is the smarter—and sexier—choice.</p>
+  <div class="offcanvas-body">
 
-    <h3>It's Way More Affordable</h3>
-    <p>A night out at a male revue might sound exciting until you tally up the costs. Between tickets (often $30–$60 each), drinks, tips, rideshares, and parking, your group could spend hundreds before the show even begins. And unless you’re front row, you’re watching from a distance with dozens—or even hundreds—of other people.</p>
-    <p>In contrast, a private dancer typically charges one flat rate, often between $200–$300 for a full show. Split between a group of five or ten, that’s incredibly budget-friendly. You get an entire performance tailored to your group, without draining your wallet.</p>
+    <nav class="nav flex-column">
+
+      <a href="index.html" class="nav-link">
+        Home
+      </a>
+
+      <a href="about.html" class="nav-link">
+        About
+      </a>
+
+      <a href="bachelorettes.html" class="nav-link">
+        Bachelorette Parties
+      </a>
+
+      <a href="#locations" class="nav-link">
+        Locations
+      </a>
+
+      <a href="contact.html" class="nav-link">
+        Contact
+      </a>
+
+    </nav>
+
   </div>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>The Experience Is More Personal</h3>
-          <p class="w3-opacity">Main Strip to walk</p>
-          <p>This is the main place to walk on your Toronto Bach trip. 
-            You will find the best clubs and some nice resturants on this road. One stop shop.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3>You Control the Setting</h3>
-          <p class="w3">Private party performances are the exact opposite. The dancer is there for you and your crew. The attention is focused on your guest of honor. You can request themes, music, even specific dance styles—and the performer is there to make your group laugh, blush, and have a great time. It feels more intimate, more exciting, and way more memorable.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <div class="w3-container">
-          <h3> It’s More Fun for the Group</h3>
-          <p class="w3-opacity">Just Do A Dance</p>
-          <p>Booking a private stripper means the party comes to you. Whether you’re hosting at an Airbnb, a beach house, a hotel suite, or your own living room, you don’t have to deal with noisy crowds, overpriced drinks, or strict venue rules.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-blue"><b>Entertainer</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p> Let’s be real: not everyone wants to go out to a crowded club. Some people are shy, others just want to stay in comfy clothes and sip wine with their girls. A private show brings the fun to your group without any of the hassle. You can laugh, take photos (if allowed), and fully enjoy the entertainment without worrying about being judged or competing with strangers for attention.</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-black w3-xlarge w3-padding-32"></li>
-        <li class="w3-padding-16">Exotic Dancers</li>
-        <li class="w3-padding-16">Sexy City</li>
-        <li class="w3-padding-16">Party Dancers</li>
-        <li class="w3-padding-16">Have Fun</li>
-        <li class="w3-padding-16">Good prices</li>
-        <li class="w3-padding-16">
-          <h2>Come See</h2>
-          <span class="w3-opacity">We love strippers</span>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-blue w3-xlarge w3-padding-32"></li>
-        <li class="w3-padding-16">Pleasers Online</li>
-        <li class="w3-padding-16">Learn more</li>
-        <li class="w3-padding-16">See the site</li>
-        <li class="w3-padding-16">The best prices</li>
-        <li class="w3-padding-16">Bachelorettes</li>
-        <li class="w3-padding-16">
-          <h2>We Want You</h2>
-          <span class="w3-opacity">Book Now</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h4 class="w3-xlarge w3-text-blue"><b>Pleasers Online</b></h4>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p></p>
-    
-      <div class="w3-section">
-        <div>Strip Club Strippers </div>
-      </div>
-  </div>
-
-<!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-black w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Bachelorette SC</a></p></div>
+<!-- MAIN PAGE CONTENT -->
+
+<main class="main-content">
+
+  <!-- HEADER -->
+
+  <header id="showcase">
+
+    <h1 class="blue-heading">
+      Toronto Party Entertainers & Private Entertainment
+    </h1>
+
+    <h2 class="h5 blue-heading mt-3">
+      Parties, Special Events, Dancers and Entertainment
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Pleasers Online is an entertainment resource for
+      private parties, bachelorette celebrations, birthdays,
+      girls nights out and special events throughout Toronto
+      and the Greater Toronto Area.
+    </p>
+
+    <p>
+      Explore independent entertainers, private dancers,
+      themed performances and creative party experiences
+      for your next celebration in Southern Ontario.
+    </p>
+
+    <a href="contact.html" class="btn btn-blue">
+      Entertainment Inquiries
+    </a>
+
+  </header>
+
+  <!-- SMALL PHOTO GALLERY -->
+
+  <section class="mt-4">
+
+    <div class="row g-3" style="max-width: 850px;">
+
+      <div class="col-6 col-md-4">
+
+        <img src="Strip club.png"
+          class="gallery-image"
+          alt="Adult nightlife entertainment inspiration"
+          onclick="openImage(this)">
+
+      </div>
+
+      <div class="col-6 col-md-4">
+
+        <img src="male stripper.png"
+          class="gallery-image"
+          alt="Male entertainer inspiration"
+          onclick="openImage(this)">
+
+      </div>
+
+      <div class="col-6 col-md-4">
+
+        <img src="gen9.jpg"
+          class="gallery-image"
+          alt="Private party entertainment inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+      <div class="col-6 col-md-4">
+
+        <img src="gen5.jpg"
+          class="gallery-image"
+          alt="Bachelorette party entertainment inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+      <div class="col-6 col-md-4">
+
+        <img src="gen11.jpg"
+          class="gallery-image"
+          alt="Special event entertainment inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+      <div class="col-6 col-md-4">
+
+        <img src="gen4.jpg"
+          class="gallery-image"
+          alt="Party celebration inspiration"
+          onclick="openImage(this)"
+          loading="lazy">
+
+      </div>
+
+    </div>
+
+    <p class="small text-muted mt-3">
+      Gallery images are for entertainment inspiration
+      and do not represent a confirmed performer roster.
+    </p>
+
+  </section>
+
+  <!-- IMAGE MODAL -->
+
+  <div class="modal fade" id="imageModal" tabindex="-1"
+    aria-labelledby="imageCaption" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+      <div class="modal-content bg-dark text-white">
+
+        <div class="modal-header border-0">
+
+          <h2 class="modal-title fs-6" id="imageCaption">
+            Entertainment Gallery
+          </h2>
+
+          <button type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="modal"
+            aria-label="Close">
+          </button>
+
+        </div>
+
+        <div class="modal-body text-center">
+
+          <img id="modalImage"
+            class="img-fluid rounded"
+            alt=""
+            style="max-height: 75vh;">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SERVICES -->
+
+  <section class="section" id="services">
+
+    <h2 class="blue-heading">
+      Hire Private Entertainers in Toronto
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Toronto is home to a diverse entertainment scene
+      featuring independent performers, live dancers,
+      nightlife venues and private party specialists.
+      Whether you are planning a bachelorette party,
+      birthday celebration or an exciting weekend with
+      friends, private entertainment offers a different
+      way to celebrate.
+    </p>
+
+    <p>
+      Pleasers Online helps visitors explore entertainment
+      options throughout Toronto, Mississauga, Brampton,
+      Vaughan, Markham, Richmond Hill, Oakville and
+      surrounding communities.
+    </p>
+
+    <p>
+      Entertainment can be arranged around the needs of
+      your group, whether you prefer a daytime celebration,
+      evening performance or a themed private event.
+      Availability depends on the individual entertainer
+      and event location.
+    </p>
+
+    <h3 class="h4 mt-4">
+      Entertainment for Different Types of Parties
+    </h3>
+
+    <ul>
+
+      <li>
+        <strong>Bachelorette Parties:</strong>
+        Private entertainment and creative activities
+        for the bride and her closest friends.
+      </li>
+
+      <li>
+        <strong>Bachelor Parties:</strong>
+        Independent performers and adult entertainment
+        options for private celebrations.
+      </li>
+
+      <li>
+        <strong>Birthday Parties:</strong>
+        Surprise entertainment for milestone birthdays
+        and special occasions.
+      </li>
+
+      <li>
+        <strong>Girls Nights Out:</strong>
+        Exciting group activities and private party experiences.
+      </li>
+
+      <li>
+        <strong>Divorce Parties:</strong>
+        Celebrate a new chapter with friends and entertainment.
+      </li>
+
+      <li>
+        <strong>Themed Celebrations:</strong>
+        Explore performers and activities that complement
+        your party theme.
+      </li>
+
+      <li>
+        <strong>Private Events:</strong>
+        Entertainment for suitable venues, residences
+        and invited guests.
+      </li>
+
+    </ul>
+
+  </section>
+
+  <!-- MALE AND FEMALE ENTERTAINERS -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Male and Female Dancers
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-start g-4">
+
+      <div class="col-md-8">
+
+        <p>
+          Customers searching for Toronto strippers,
+          exotic dancers or private party entertainers
+          can explore a variety of independent performers
+          throughout the Greater Toronto Area.
+        </p>
+
+        <p>
+          Male and female entertainers may be available
+          for bachelorette parties, bachelor parties,
+          birthdays and other adult celebrations.
+          Performance styles, costumes, prices and
+          availability vary between individual entertainers.
+        </p>
+
+        <p>
+          Private performances allow groups to arrange
+          entertainment around their preferred schedule
+          rather than relying on public nightclub events
+          or regularly scheduled shows.
+        </p>
+
+        <h3 class="h5 mt-4">
+          Choosing an Independent Entertainer
+        </h3>
+
+        <p>
+          When hiring an entertainer, look for genuine
+          photographs, clear communication, transparent
+          pricing and performance details that fit
+          your group's preferences.
+        </p>
+
+      </div>
+
+      <div class="col-md-4 text-center">
+
+        <img src="gen10.jpg"
+          class="small-image"
+          alt="Private dancer entertainment inspiration"
+          onclick="openImage(this)"
+          style="cursor:pointer;"
+          loading="lazy">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED ENTERTAINER -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Independent Entertainers in Ontario
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Booking directly with an independent entertainer
+      allows you to communicate with the performer,
+      discuss your celebration and confirm important
+      details before making arrangements.
+    </p>
+
+    <div class="information-card">
+
+      <h3>Hard Body Dancer</h3>
+
+      <p class="text-muted">
+        Male Entertainment – Toronto and Southern Ontario
+      </p>
+
+      <p>
+        <a href="https://hardbodydancer.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Hard Body Dancer
+        </a>
+        is an independent male entertainment business
+        operated by Miguel in Ontario, Canada.
+      </p>
+
+      <p>
+        Private male entertainment is offered for
+        bachelorette parties, birthdays, girls nights
+        out and other adult celebrations.
+      </p>
+
+      <p>
+        Contact the performer directly for photographs,
+        performance information, service areas,
+        pricing and availability throughout Toronto
+        and surrounding Ontario communities.
+      </p>
+
+      <a href="https://hardbodydancer.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-blue">
+
+        Visit Hard Body Dancer
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- PRIVATE ENTERTAINMENT -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Private Party Entertainment vs. Strip Clubs
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Toronto offers both public adult entertainment
+      venues and independent private entertainers.
+      The right option depends on your group, budget,
+      celebration style and preferred atmosphere.
+    </p>
+
+    <p>
+      A public entertainment venue may be suitable
+      for groups looking for a traditional night out.
+      Private entertainment offers an alternative
+      for people who want to celebrate together
+      at their own approved event location.
+    </p>
+
+    <p>
+      Private performances may also make it easier
+      to organize surprise celebrations, coordinate
+      group schedules and share entertainment
+      expenses between guests.
+    </p>
+
+    <div class="row g-3 mt-3">
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>
+            A More Personal Experience
+          </h3>
+
+          <p>
+            Private entertainment allows the group
+            to discuss performance preferences,
+            themes and expectations directly with
+            the entertainer.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>
+            Flexible Scheduling
+          </h3>
+
+          <p>
+            Arrange entertainment during brunch,
+            in the afternoon or before heading
+            downtown for dinner and nightlife.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="information-card">
+
+          <h3>
+            Group Celebrations
+          </h3>
+
+          <p>
+            Enjoy entertainment with your invited
+            guests and potentially share the total
+            cost among members of your group.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BACHELORETTE PARTIES -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Bachelorette Party Entertainment
+    </h2>
+
+    <hr class="section-line">
+
+    <div class="row align-items-start g-4">
+
+      <div class="col-md-8">
+
+        <p>
+          Toronto is an exciting destination for
+          bachelorette parties, offering rooftop
+          lounges, brunch restaurants, waterfront
+          activities, shopping, spas and nightlife.
+        </p>
+
+        <p>
+          Private entertainers can be incorporated
+          into a bachelorette brunch, themed party,
+          evening celebration or girls weekend.
+          This gives the bridal party flexibility
+          when planning other activities throughout
+          Toronto.
+        </p>
+
+        <p>
+          Popular areas for bachelorette celebrations
+          include King Street West, Queen Street West,
+          Yorkville, the Entertainment District
+          and the Toronto waterfront.
+        </p>
+
+        <p>
+          Visit our
+          <a href="bachelorettes.html">
+            Toronto bachelorette party entertainment page
+          </a>
+          for more ideas, activities and inspiration
+          for the bride and her friends.
+        </p>
+
+        <a href="bachelorettes.html" class="btn btn-blue">
+          Bachelorette Party Ideas
+        </a>
+
+      </div>
+
+      <div class="col-md-4 text-center">
+
+        <img src="gen12.jpg"
+          class="small-image"
+          alt="Bachelorette celebration inspiration"
+          onclick="openImage(this)"
+          style="cursor:pointer;"
+          loading="lazy">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LOCATIONS -->
+
+  <section class="section" id="locations">
+
+    <h2 class="blue-heading">
+      Toronto and Greater Toronto Area Entertainment
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Private party entertainment is not limited to
+      downtown Toronto. Independent entertainers
+      may travel throughout the Greater Toronto Area
+      and other communities in Southern Ontario,
+      depending on their availability and travel policies.
+    </p>
+
+    <div class="row g-3 mt-3">
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Toronto
+          </h3>
+
+          <p class="mb-0">
+            Explore private entertainers for downtown
+            celebrations, birthdays, bachelorette
+            parties and girls nights out.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Mississauga
+          </h3>
+
+          <p class="mb-0">
+            Discover entertainment options for private
+            gatherings, special occasions and celebrations
+            throughout Mississauga.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Brampton
+          </h3>
+
+          <p class="mb-0">
+            Explore independent entertainers, dancers
+            and party experiences for celebrations
+            throughout Brampton.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Vaughan
+          </h3>
+
+          <p class="mb-0">
+            Find inspiration for private parties,
+            adult birthdays and group celebrations
+            in Vaughan and nearby communities.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Markham and Richmond Hill
+          </h3>
+
+          <p class="mb-0">
+            Explore private entertainment options
+            for special events, themed celebrations
+            and gatherings with friends.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Oakville and Burlington
+          </h3>
+
+          <p class="mb-0">
+            Discover entertainment ideas for private
+            celebrations and weekend getaways
+            west of Toronto.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Hamilton
+          </h3>
+
+          <p class="mb-0">
+            Explore private male and female
+            entertainment options for birthdays,
+            bachelorette parties and special events.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="city-box">
+
+          <h3 class="h5">
+            Niagara Falls
+          </h3>
+
+          <p class="mb-0">
+            Combine Niagara Falls nightlife,
+            winery weekends and private party
+            entertainment for your next celebration.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <h3 class="h5 mt-4">
+      Additional Toronto Neighbourhoods and Nearby Cities
+    </h3>
+
+    <p>
+      Entertainment inquiries may also include
+      North York, Scarborough, Etobicoke,
+      East York, Downtown Toronto, Woodbridge,
+      Thornhill, Aurora, Newmarket, Pickering,
+      Ajax, Whitby, Oshawa and Milton.
+    </p>
+
+    <p>
+      Contact individual performers to confirm
+      availability, travel expenses and service
+      coverage for your event location.
+    </p>
+
+  </section>
+
+  <!-- BOOKING INFORMATION -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      What to Know Before Booking an Entertainer
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Planning private entertainment is easier
+      when you have the basic event details
+      prepared before contacting a performer.
+    </p>
+
+    <ul>
+
+      <li>
+        <strong>Event Date:</strong>
+        Confirm the date and preferred performance time.
+      </li>
+
+      <li>
+        <strong>Location:</strong>
+        Provide the city or neighbourhood where
+        your celebration is taking place.
+      </li>
+
+      <li>
+        <strong>Group Size:</strong>
+        Let the entertainer know how many guests
+        are expected.
+      </li>
+
+      <li>
+        <strong>Entertainment Type:</strong>
+        Discuss the type of performance that
+        best suits your celebration.
+      </li>
+
+      <li>
+        <strong>Pricing:</strong>
+        Confirm the total cost, travel expenses
+        and any deposit requirements.
+      </li>
+
+      <li>
+        <strong>Venue Rules:</strong>
+        Make sure your property or event venue
+        permits outside entertainment.
+      </li>
+
+      <li>
+        <strong>Photography:</strong>
+        Ask the entertainer before taking photographs
+        or recording performances.
+      </li>
+
+      <li>
+        <strong>Respect:</strong>
+        Follow agreed performance boundaries
+        and respect the comfort of all guests.
+      </li>
+
+    </ul>
+
+  </section>
+
+  <!-- ENTERTAINMENT OPTIONS -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Explore Your Entertainment Options
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Every celebration is different. Explore private
+      entertainment based on your occasion, group
+      preferences and event requirements.
+    </p>
+
+    <div class="row g-4 mt-3">
+
+      <!-- PACKAGE ONE -->
+
+      <div class="col-md-6">
+
+        <div class="package-card">
+
+          <div class="package-heading-dark">
+
+            <h3 class="h4 mb-0">
+              Private Party Entertainment
+            </h3>
+
+          </div>
+
+          <div class="package-item">
+            Independent Entertainers
+          </div>
+
+          <div class="package-item">
+            Male and Female Dancers
+          </div>
+
+          <div class="package-item">
+            Birthday Celebrations
+          </div>
+
+          <div class="package-item">
+            Bachelor and Bachelorette Parties
+          </div>
+
+          <div class="package-item">
+            Daytime and Evening Events
+          </div>
+
+          <div class="p-4">
+
+            <h4 class="h5">
+              Request Information
+            </h4>
+
+            <p class="text-muted small">
+              Pricing and availability vary.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- PACKAGE TWO -->
+
+      <div class="col-md-6">
+
+        <div class="package-card">
+
+          <div class="package-heading">
+
+            <h3 class="h4 mb-0">
+              Special Event Inquiries
+            </h3>
+
+          </div>
+
+          <div class="package-item">
+            Girls Nights Out
+          </div>
+
+          <div class="package-item">
+            Themed Party Entertainment
+          </div>
+
+          <div class="package-item">
+            Private Group Celebrations
+          </div>
+
+          <div class="package-item">
+            Weekend Entertainment
+          </div>
+
+          <div class="package-item">
+            Toronto and Southern Ontario
+          </div>
+
+          <div class="p-4">
+
+            <h4 class="h5">
+              Plan Your Celebration
+            </h4>
+
+            <p class="text-muted small">
+              Tell us about your event.
+            </p>
+
+            <a href="contact.html" class="btn btn-blue">
+              Contact Us
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Toronto Entertainment FAQs
+    </h2>
+
+    <hr class="section-line">
+
+    <h3 class="h5 mt-4">
+      Can I hire a private entertainer in Toronto?
+    </h3>
+
+    <p>
+      Independent entertainers offer private
+      performances throughout Toronto and surrounding
+      communities. Contact individual performers
+      to discuss availability and event details.
+    </p>
+
+    <h3 class="h5 mt-4">
+      How much does a private dancer cost in Toronto?
+    </h3>
+
+    <p>
+      Entertainment prices vary depending on the
+      performer, event location, performance duration
+      and requested entertainment. Confirm the
+      total price before booking.
+    </p>
+
+    <h3 class="h5 mt-4">
+      Are entertainers available outside downtown Toronto?
+    </h3>
+
+    <p>
+      Many independent entertainers may travel to
+      Mississauga, Brampton, Vaughan, Markham,
+      Richmond Hill, Oakville and other communities.
+      Travel policies vary by performer.
+    </p>
+
+    <h3 class="h5 mt-4">
+      Can I book entertainment during the afternoon?
+    </h3>
+
+    <p>
+      Daytime entertainment may be available for
+      brunch celebrations, birthdays, bachelorette
+      parties and private gatherings, depending
+      on performer schedules.
+    </p>
+
+    <h3 class="h5 mt-4">
+      What types of parties are suitable for private entertainment?
+    </h3>
+
+    <p>
+      Private entertainment can be incorporated
+      into bachelor parties, bachelorette parties,
+      adult birthdays, girls nights out, themed
+      celebrations and other special occasions.
+    </p>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section">
+
+    <h2 class="blue-heading">
+      Contact Pleasers Online
+    </h2>
+
+    <hr class="section-line">
+
+    <p>
+      Looking for entertainment ideas for your next
+      Toronto celebration? Explore private party
+      entertainment, independent dancers and
+      special event options throughout the
+      Greater Toronto Area.
+    </p>
+
+    <p>
+      Visit our contact page for entertainment
+      inquiries or learn more about Pleasers Online
+      and our entertainment resources.
+    </p>
+
+    <div class="d-flex flex-wrap gap-3">
+
+      <a href="contact.html" class="btn btn-blue">
+        Contact Pleasers Online
+      </a>
+
+      <a href="about.html" class="btn btn-outline-dark">
+        About Us
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container-fluid">
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+
+        <h2 class="h5">
+          Pleasers Online
+        </h2>
+
+        <p class="small">
+          Private party entertainment, independent
+          dancers and celebration ideas throughout
+          Toronto and Southern Ontario, Canada.
+        </p>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <h3 class="h6">
+          Website Links
+        </h3>
+
+        <p class="small">
+
+          <a href="index.html">Home</a> |
+
+          <a href="about.html">About</a> |
+
+          <a href="bachelorettes.html">Bachelorettes</a> |
+
+          <a href="contact.html">Contact</a>
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <p class="small text-center">
+
+      Toronto | Mississauga | Brampton | Vaughan |
+      Markham | Richmond Hill | Oakville | Burlington |
+      Hamilton | Niagara Falls
+
+    </p>
+
+    <p class="small text-center">
+
+      Entertainment availability varies by location
+      and individual performer. Adult entertainment
+      is restricted to individuals who meet applicable
+      legal age requirements.
+
+    </p>
+
+    <p class="text-center mb-0">
+
+      &copy; 2026 Pleasers Online. All Rights Reserved.
+
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+  function openImage(element) {
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    document.getElementById("modalImage").src = element.src;
+
+    document.getElementById("modalImage").alt = element.alt;
+
+    document.getElementById("imageCaption").textContent = element.alt;
+
+    const imageModal = bootstrap.Modal.getOrCreateInstance(
+      document.getElementById("imageModal")
+    );
+
+    imageModal.show();
+  }
+
+  document.querySelectorAll('#mobileMenu a[href^="#"]')
+    .forEach(function(link) {
+
+      link.addEventListener('click', function() {
+
+        const menu = bootstrap.Offcanvas.getInstance(
+          document.getElementById('mobileMenu')
+        );
+
+        if (menu) {
+          menu.hide();
+        }
+
+      });
+
+    });
 </script>
 
 </body>
